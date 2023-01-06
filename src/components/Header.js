@@ -1,8 +1,16 @@
-function Header() {
+import React from "react";
+import Nav from "./Nav";
+
+function Header(props) {
+  const { currentTab, handleTabChange } = props;
+
   return (
     <div>
-      <h1>Haley</h1>
-      <h2>I'm sorry</h2>
+      <section>
+        <div>
+          <Nav currentTab={currentTab} handleTabChange={handleTabChange}></Nav>
+        </div>
+      </section>
     </div>
   );
 }
