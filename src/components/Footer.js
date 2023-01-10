@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <h1>this is my footer</h1>
+      <p class="footerText">2022 | designed & coded by Haley Trumbo</p>
     </footer>
   );
 }

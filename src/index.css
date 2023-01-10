@@ -1,13 +1,143 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main,
+body {
+  background-color: #d4a373;
+}
+
+/* header styling */
+.homeScreen {
+  background-color: #ccd5ae;
+  min-width: 100%;
+  height: 85%;
+}
+
+#welcome {
+  padding-top: 200px;
+  text-align: center;
+  font-size: 88px;
+  font-family: "opensans-bold", sans-serif;
+  color: #d4a373;
+  height: 15%;
+}
+
+#introduction {
+  text-align: center;
+  font-size: 88px;
+  font-family: sans-serif;
+  color: #b68c62;
+  height: 15%;
+  padding-top: 10px;
+}
+
+.highlight {
+  background-color: #fefae0;
+}
+
+#softDev {
+  text-align: center;
+  font-size: 30px;
+  font-family: Garamond;
+  color: #d4a373;
+  height: 15%;
+  padding-top: 50px;
+}
+
+.diagonal {
+  background-color: #e9edc9;
+  height: 30%;
+}
+
+.diagonal:after {
+  content: "";
+  position: absolute;
+  background-color: #ccd5ae;
+  -webkit-clip-path: polygon(100% 100%, 100% 0, 0 0);
+  clip-path: polygon(170% 100%, 100% 0, 0 0);
+  height: 30%;
+  width: 100%;
+}
+/* nav styling */
+nav {
+  height: 50px;
+  text-align: center;
+  background-color: #fefae0;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.navList,
+a {
+  display: inline;
+  padding: 5px;
+  text-decoration: none;
+  color: #d4a373;
+  text-align: center;
+  display: inline-block;
+  font-family: "opensans-bold", sans-serif;
+  font-size: 20px;
+}
+
+/* about me styling */
+
+#aboutMe {
+  background-color: #e9edc9;
+  padding-top: 140px;
+  height: 80%;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8%;
+}
+
+.flex-row {
+  display: flex;
+}
+
+#profPic {
+  height: auto;
+  max-width: 23%;
+  border-radius: 200px;
+}
+
+.me1 {
+  color: black;
+  font-family: Garamond;
+  font-size: 30px;
+  height: 10%;
+  width: 40%;
+  float: right;
+  margin-right: 350px;
+}
+
+.me {
+  height: 85%;
+  width: 70%;
+  float: right;
+  color: black;
+  font-family: sans-serif;
+  font-size: 25px;
+  margin-right: 40px;
+  line-height: 1.5;
+}
+
+/* footer styling */
+footer {
+  height: 4%;
+  background-color: #d4a373;
+}
+
+.footerText {
+  color: #fefae0;
+  font-family: "opensans-bold", sans-serif;
+  text-align: center;
+  padding-bottom: 3px;
 }
