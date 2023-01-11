@@ -11,8 +11,8 @@ function Nav(props) {
   // }, [currentTab]);
 
   return (
-    <nav>
-      <ul className="nav nav-tabs">
+    <section className="navv">
+      <ul className="navv">
         <li className="navList">
           <a
             href="#about"
@@ -58,7 +58,7 @@ function Nav(props) {
           </a>
         </li>
       </ul>
-    </nav>
+    </section>
   );
 }
 

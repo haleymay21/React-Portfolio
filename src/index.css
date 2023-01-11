@@ -6,7 +6,7 @@
 
 main,
 body {
-  background-color: #d4a373;
+  background-color: #e9edc9;
 }
 
 /* header styling */
@@ -19,7 +19,7 @@ body {
 #welcome {
   padding-top: 200px;
   text-align: center;
-  font-size: 88px;
+  font-size: 95px;
   font-family: "opensans-bold", sans-serif;
   color: #d4a373;
   height: 15%;
@@ -27,11 +27,11 @@ body {
 
 #introduction {
   text-align: center;
-  font-size: 88px;
+  font-size: 95px;
   font-family: sans-serif;
   color: #b68c62;
   height: 15%;
-  padding-top: 10px;
+  padding-top: 100px;
 }
 
 .highlight {
@@ -44,7 +44,7 @@ body {
   font-family: Garamond;
   color: #d4a373;
   height: 15%;
-  padding-top: 50px;
+  padding-top: 120px;
 }
 
 .diagonal {
@@ -62,19 +62,20 @@ body {
   width: 100%;
 }
 /* nav styling */
-nav {
+.navv {
   height: 50px;
   text-align: center;
   background-color: #fefae0;
   position: fixed;
   z-index: 2;
   width: 100%;
+  color: #d4a373;
 }
 
 .navList,
 a {
   display: inline;
-  padding: 5px;
+  padding: 10px;
   text-decoration: none;
   color: #d4a373;
   text-align: center;
@@ -119,14 +120,58 @@ a {
 }
 
 .me {
-  height: 85%;
+  height: 70%;
   width: 70%;
   float: right;
   color: black;
   font-family: sans-serif;
-  font-size: 25px;
-  margin-right: 40px;
+  font-size: 21px;
+  margin-right: 0;
   line-height: 1.5;
+}
+
+/* portfolio styler */
+#portfolio {
+  background: #faedcd;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+.projects {
+  color: #91987b;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  height: 10%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.work {
+  min-height: 220px;
+  max-height: 220px;
+  min-width: 280px;
+  max-width: 280px;
+  margin: 20px;
+  margin-top: 0;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+  background-size: 375px;
+}
+
+.work:hover {
+  background-color: rgba(235, 233, 233, 0.815);
+}
+
+.projectTitle {
+  height: 10%;
+}
+
+.col {
+  height: 50%;
 }
 
 /* footer styling */
