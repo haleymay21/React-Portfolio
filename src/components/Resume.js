@@ -1,12 +1,15 @@
 import React from "react";
+import { BsCloudDownload } from "react-icons/bs";
+import myResume from "../assets/Resume1.docx.pdf";
 
 function Resume() {
   return (
-    <div>
-      <section id="welcome-section" className="download-intro">
-        <h1>resume section</h1>
-      </section>
-    </div>
+    <section id="resume" className="download-intro">
+      <h1 class="resumeTitle">Download My Resume</h1>
+      <a href={myResume} className="download-logo" size="10x" download>
+        <BsCloudDownload />
+      </a>
+    </section>
   );
 }
 

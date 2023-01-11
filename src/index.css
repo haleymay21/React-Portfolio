@@ -246,6 +246,30 @@ h3 {
   margin-left: 100px;
 }
 
+/* resume styling */
+
+#resume {
+  background-color: #e9edc9;
+  height: 10%;
+}
+
+.resumeTitle {
+  padding-top: 300px;
+  text-align: center;
+  height: 10%;
+}
+
+.download-logo {
+  min-height: 100px;
+  font-size: 100px;
+  color: #b68c62;
+  padding-left: 660px;
+}
+
+.download-logo:hover {
+  color: #91987b;
+}
+
 /* footer styling */
 footer {
   height: 4%;

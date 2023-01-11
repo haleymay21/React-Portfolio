@@ -1,14 +1,7 @@
-import React, { useEffect } from "react";
-// import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from "react";
 
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
 function Nav(props) {
   const { currentTab, handleTabChange } = props;
-
-  // useEffect(() => {
-  //   document.title = capitalizeFirstLetter(currentTab.name);
-  // }, [currentTab]);
 
   return (
     <section className="navv">
@@ -17,7 +10,7 @@ function Nav(props) {
           <a
             href="#about"
             onClick={() => handleTabChange("About")}
-            // Check to see if the currentTab is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+            // Check if the currentTab is `About` and set link used
             className={currentTab === "About" ? "nav-link active" : "nav-link"}
           >
             About
@@ -27,7 +20,7 @@ function Nav(props) {
           <a
             href="#portfolio"
             onClick={() => handleTabChange("Portfolio")}
-            // Check to see if the currentTab is `Portfolio`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+            // Check if the currentTab is `Portfolio` and set link used
             className={
               currentTab === "Portfolio" ? "nav-link active" : "nav-link"
             }
@@ -39,7 +32,7 @@ function Nav(props) {
           <a
             href="#contact"
             onClick={() => handleTabChange("Contact")}
-            // Check to see if the currentTab is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+            // Check if the currentTab is `Contact` and set link used
             className={
               currentTab === "Contact" ? "nav-link active" : "nav-link"
             }
@@ -51,7 +44,7 @@ function Nav(props) {
           <a
             href="#resume"
             onClick={() => handleTabChange("Resume")}
-            // Check to see if the currentTab is `Resume`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+            // Check if the currentTab is `Resume` and set link used
             className={currentTab === "Resume" ? "nav-link active" : "nav-link"}
           >
             Resume
