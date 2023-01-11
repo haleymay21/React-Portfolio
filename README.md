@@ -6,9 +6,14 @@ This application is a portfolio created using React. The user can toggle through
 
 This portfolio is a work in progress
 
-## Links
+## Installation
 
-URL of deployed solution:
+- Clone the repository from GitHub
+- Install node.js
+- Run npm install to install dependencies.
+- Run npm start to start the web server and connect
+
+## Links
 
 URL of repository: https://github.com/haleymay21/Challenge20-React-Portfolio
 
