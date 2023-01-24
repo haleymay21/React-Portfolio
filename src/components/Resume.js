@@ -6,7 +6,7 @@ function Resume() {
   return (
     <section id="resume" className="download-intro">
       <h1 class="resumeTitle">Download My Resume</h1>
-      <a href={myResume} className="download-logo" size="10x" download>
+      <a href={myResume} className="download-logo" size="10x">
         <BsCloudDownload />
       </a>
     </section>

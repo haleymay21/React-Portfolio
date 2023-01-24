@@ -10,13 +10,21 @@ function Portfolio() {
             <div className="col">
               {" "}
               <div
-                style={{ backgroundImage: "url(/question-marks.jpeg)" }}
+                style={{ backgroundImage: "url(/homepage.png)" }}
                 className="item-wrap work"
               >
-                <div>
-                  <h3 className="projectTitle"> Will be my Project #3</h3>
-                  <p> This project does not exist yet! </p>
-                </div>
+                <a href="https://github.com/JacquelineHockin/aloHa">
+                  <div>
+                    <h3 className="projectTitle">aloHa</h3>
+                    <p>
+                      {" "}
+                      A social media application built to help users connect
+                      with their community to reach out and help the local
+                      houseless. MongoDB, Mongoose, Expressjs, Nodejs, webpack,
+                      Babel, nodemon, React, React-boot-strap
+                    </p>
+                  </div>
+                </a>
               </div>
               ;{" "}
             </div>
