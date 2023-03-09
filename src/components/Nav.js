@@ -8,7 +8,7 @@ function Nav(props) {
       <ul className="navv">
         <li className="navList">
           <a
-            href="#about"
+            href="#aboutMe"
             onClick={() => handleTabChange("About")}
             // Check if the currentTab is `About` and set link used
             className={currentTab === "About" ? "nav-link active" : "nav-link"}

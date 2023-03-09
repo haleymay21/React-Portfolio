@@ -4,43 +4,65 @@ function Portfolio() {
   return (
     <div>
       <section id="portfolio" className="jobs">
-        <p className="projects">-My Projects-</p>
+        <p className="projects">My Projects</p>
         <div className="container-fluid">
           <div className="row row-1">
             <div className="col">
               {" "}
               <div
-                style={{ backgroundImage: "url(/homepage.png)" }}
+                style={{ backgroundImage: "url(/help.jpeg)" }}
                 className="item-wrap work"
               >
                 <a href="https://github.com/JacquelineHockin/aloHa">
                   <div>
-                    <h3 className="projectTitle">aloHa</h3>
+                    <span className="highlight projectTitle">
+                      &nbsp;aloHa&nbsp;
+                    </span>
                     <p>
-                      {" "}
-                      A social media application built to help users connect
-                      with their community to reach out and help the local
-                      houseless. MongoDB, Mongoose, Expressjs, Nodejs, webpack,
-                      Babel, nodemon, React, React-boot-strap
+                      <span className="highlight description">
+                        {" "}
+                        &nbsp;A social media application built to help users
+                        connect with their community and support local houseless
+                        folks.&nbsp;{" "}
+                        <p className="language">
+                          <span className="highlight1">
+                            &nbsp;MongoDB, Mongoose, Expressjs, Nodejs, webpack,
+                            Babel, nodemon, React, React-boot-strap&nbsp;
+                          </span>
+                        </p>
+                      </span>
                     </p>
                   </div>
                 </a>
-              </div>
-              ;{" "}
+              </div>{" "}
             </div>
             <div className="col">
               {" "}
               <div
-                style={{ backgroundImage: "url(/sign_up_photo.jpeg)" }}
+                style={{ backgroundImage: "url(/water-2.jpeg)" }}
                 className="item-wrap work"
               >
-                {" "}
-                <div>
-                  <h3 className="projectTitle"> Tap Into Source</h3>
-                  <p>
-                    Node.js, Handlebars, Express, Sequelize, Bootsrap, Jquery
-                  </p>
-                </div>
+                <a href="https://github.com/JacquelineHockin/aloHa">
+                  <div>
+                    <span className="highlight projectTitle">
+                      &nbsp;Tap Into Source&nbsp;
+                    </span>{" "}
+                    <p>
+                      <span className="highlight description">
+                        {" "}
+                        &nbsp;A social media application built to help users
+                        connect with their community and support local houseless
+                        people.&nbsp;{" "}
+                        <p className="language">
+                          <span className="highlight1">
+                            &nbsp;Node.js, Handlebars, Express, Sequelize,
+                            Bootsrap, Jquery&nbsp;
+                          </span>
+                        </p>
+                      </span>
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
             <div className="col">
@@ -49,78 +71,173 @@ function Portfolio() {
                 style={{ backgroundImage: "url(/doges.webp)" }}
                 className="item-wrap work"
               >
-                {" "}
-                <div>
-                  <h3 className="projectTitle"> Doges & Dad Jokes</h3>
-                  <p> HTML, JavaScript, CSS, Bulma, 2 public API's </p>
-                </div>
+                <a href="https://github.com/JacquelineHockin/aloHa">
+                  <div>
+                    <span className="highlight projectTitle">
+                      &nbsp;Doges & Dad Jokes&nbsp;
+                    </span>{" "}
+                    <p>
+                      <span className="highlight description">
+                        {" "}
+                        &nbsp;A social media application built to help users
+                        connect with their community and support local houseless
+                        people.&nbsp;{" "}
+                        <p className="language">
+                          <span className="highlight1">
+                            &nbsp; HTML, JavaScript, CSS, Bulma, 2 public API's
+                            &nbsp;
+                          </span>
+                        </p>
+                      </span>
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
             <div className="col">
               {" "}
               <div
-                style={{ backgroundImage: "url(/calender.jpeg)" }}
+                style={{ backgroundImage: "url(/clocks.jpeg)" }}
                 className="item-wrap work"
               >
-                {" "}
-                <div>
-                  <h3 className="projectTitle"> Dynamic Calender</h3>
-                  <p> HTML, CSS, Jquery, Moment </p>
-                </div>
+                <a href="https://github.com/JacquelineHockin/aloHa">
+                  <div>
+                    <span className="highlight projectTitle">
+                      &nbsp;Dynamic Calander&nbsp;
+                    </span>{" "}
+                    <p>
+                      <span className="highlight description">
+                        {" "}
+                        &nbsp;A social media application built to help users
+                        connect with their community and support local houseless
+                        people.&nbsp;{" "}
+                        <p className="language">
+                          <span className="highlight1">
+                            &nbsp; HTML, CSS, Jquery, Moment &nbsp;
+                          </span>
+                        </p>
+                      </span>
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
             <div className="col">
               {" "}
               <div
-                style={{ backgroundImage: "url(/weatherstack-forecast.gif)" }}
+                style={{ backgroundImage: "url(/weather.jpeg)" }}
                 className="item-wrap work"
               >
-                {" "}
-                <div>
-                  <h3 className="projectTitle"> Weather Dashboard</h3>
-                  <p> HTML, CSS, Bootstrap, Jquery, Openweather API</p>
-                </div>
-              </div>
-              ;{" "}
+                <a href="https://github.com/JacquelineHockin/aloHa">
+                  <div>
+                    <span className="highlight projectTitle">
+                      &nbsp;Weather Dashboard&nbsp;
+                    </span>{" "}
+                    <p>
+                      {" "}
+                      <span className="highlight description">
+                        {" "}
+                        &nbsp;A social media application built to help users
+                        connect with their community and support local houseless
+                        people.&nbsp;{" "}
+                        <p className="language">
+                          <span className="highlight1">
+                            &nbsp; HTML, CSS, Bootstrap, Jquery, Openweather API
+                            &nbsp;
+                          </span>
+                        </p>
+                      </span>
+                    </p>
+                  </div>
+                </a>
+              </div>{" "}
             </div>
             <div className="col">
               {" "}
               <div
-                style={{ backgroundImage: "url(/employee-tracker.png)" }}
+                style={{ backgroundImage: "url(/employee.jpeg)" }}
                 className="item-wrap work"
               >
-                {" "}
-                <div>
-                  <h3 className="projectTitle"> Employee Tracker</h3>
-                  <p>Node, Inquirer, MYSQL</p>
-                </div>
-              </div>
+                <a href="https://github.com/JacquelineHockin/aloHa">
+                  <div>
+                    <span className="highlight projectTitle">
+                      &nbsp;Employee Tracker&nbsp;
+                    </span>{" "}
+                    <p>
+                      {" "}
+                      <span className="highlight description">
+                        {" "}
+                        &nbsp;A social media application built to help users
+                        connect with their community and support local houseless
+                        people.&nbsp;{" "}
+                        <p className="language">
+                          <span className="highlight1">
+                            &nbsp; Node, Inquirer, MYSQL &nbsp;
+                          </span>
+                        </p>
+                      </span>
+                    </p>
+                  </div>
+                </a>
+              </div>{" "}
             </div>
             <div className="col">
               {" "}
               <div
-                style={{ backgroundImage: "url(/redme-gen.png)" }}
+                style={{ backgroundImage: "url(/node-readme.jpeg)" }}
                 className="item-wrap work"
               >
-                {" "}
-                <div>
-                  <h3 className="projectTitle"> README Generator</h3>
-                  <p>Node.js</p>
-                </div>
-              </div>
+                <a href="https://github.com/JacquelineHockin/aloHa">
+                  <div>
+                    <span className="highlight projectTitle">
+                      &nbsp;README Generator&nbsp;
+                    </span>{" "}
+                    <p>
+                      {" "}
+                      <span className="highlight description">
+                        {" "}
+                        &nbsp;A social media application built to help users
+                        connect with their community and support local houseless
+                        people.&nbsp;{" "}
+                        <p className="language">
+                          <span className="highlight1">
+                            &nbsp;Node.js &nbsp;
+                          </span>
+                        </p>
+                      </span>
+                    </p>
+                  </div>
+                </a>
+              </div>{" "}
             </div>
             <div className="col">
               {" "}
               <div
-                style={{ backgroundImage: "url(/note-taker.png)" }}
+                style={{ backgroundImage: "url(/note.webp)" }}
                 className="item-wrap work"
               >
-                {" "}
-                <div>
-                  <h3 className="projectTitle"> Note Taking App</h3>
-                  <p>Node.js, Express </p>
-                </div>
-              </div>
+                <a href="https://github.com/JacquelineHockin/aloHa">
+                  <div>
+                    <span className="highlight projectTitle">
+                      &nbsp;Note Taking App&nbsp;
+                    </span>{" "}
+                    <p>
+                      {" "}
+                      <span className="highlight description">
+                        {" "}
+                        &nbsp;A social media application built to help users
+                        connect with their community and support local houseless
+                        people.&nbsp;{" "}
+                        <p className="language">
+                          <span className="highlight1">
+                            &nbsp;Node.js, Express &nbsp;
+                          </span>
+                        </p>
+                      </span>
+                    </p>
+                  </div>
+                </a>
+              </div>{" "}
             </div>
           </div>
         </div>
