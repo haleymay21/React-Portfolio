@@ -64,7 +64,7 @@ body {
 
 /* nav styling */
 .navv {
-  height: 50px;
+  height: 51px;
   background-color: #fefae0;
   position: fixed;
   z-index: 2;
@@ -72,14 +72,40 @@ body {
   color: #d4a373;
 }
 
+.resume,
+.resume2 {
+  text-decoration: none;
+  color: #6e735d !important;
+  font-family: "opensans-bold", sans-serif;
+  font-size: 20px;
+  float: right;
+  list-style-type: none;
+  margin-top: 2px;
+}
+
+.resume {
+  border: solid #91987b;
+  margin-right: 30px;
+  margin-left: 10px;
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 6px;
+  background-color: #ccd5ae40;
+}
+
 .navList,
 a {
-  padding: 10px;
+  padding: 5px;
   text-decoration: none;
   color: #9d7854;
   font-family: "opensans-bold", sans-serif;
   font-size: 20px;
   float: right;
+}
+
+.navList {
+  margin-left: 10px;
+  margin-top: 4px;
 }
 
 .navList:hover {
@@ -98,12 +124,12 @@ a {
 }
 
 .my-icon {
-  color: #9d7854;
+  color: #6e735d;
   margin-right: 20px;
 }
 
 .contact {
-  margin-right: 20px;
+  margin-right: 5px;
 }
 ************** .social-links {
   float: right;
@@ -415,18 +441,33 @@ footer {
 
 /* side nav styling */
 .githubb,
-.linkedinn {
+.linkedinn,
+.instagramm {
   display: grid;
   height: 50px;
-  color: #474d36;
+  color: #9d7854;
+  background-color: #fefae0;
+  border-right: solid #91987b;
+  border-width: 2px;
+}
+
+.linkedinn {
+  border-top: solid #9d7854;
+  border-width: 2px;
+}
+
+.githubb {
+  border-bottom: solid #91987b;
+  border-width: 2px;
 }
 
 .social-linkss,
 .side-nav {
-  height: 100px;
+  height: 100%;
   width: 60px;
   z-index: 2;
   position: fixed;
-  z-index: 2;
-  margin-left: ;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column-reverse;
 }

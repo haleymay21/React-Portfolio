@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
-
+import SideNav from "./SideNav";
 
 function Header(props) {
   const { currentTab, handleTabChange } = props;
@@ -10,6 +10,8 @@ function Header(props) {
       <section>
         <div>
           <Nav currentTab={currentTab} handleTabChange={handleTabChange}></Nav>
+          <SideNav></SideNav>
+
           <div>
             <h1 id="welcome">Welcome!</h1>
             <h1 id="introduction">I'm Haley Trumbo</h1>

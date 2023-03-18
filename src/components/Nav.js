@@ -1,5 +1,6 @@
 import React from "react";
 import { IconHexagonLetterH } from "@tabler/icons-react";
+import myResume from "../assets/Resume1.docx.pdf";
 
 function Nav(props) {
   const { currentTab, handleTabChange } = props;
@@ -10,7 +11,12 @@ function Nav(props) {
         <li className="my-icon">
           <IconHexagonLetterH size={40} />
         </li>
-
+        <li className="resume">
+          {" "}
+          <a href={myResume}>
+            <p className="resume2">Resume</p>
+          </a>
+        </li>
         <li className="navList contact">
           <a
             href="#contact"

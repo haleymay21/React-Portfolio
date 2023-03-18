@@ -94,7 +94,7 @@ function Portfolio() {
                 </a>
               </div>
             </div>
-            <div className="col">
+            {/* <div className="col">
               {" "}
               <div
                 style={{ backgroundImage: "url(/clocks.jpeg)" }}
@@ -121,7 +121,7 @@ function Portfolio() {
                   </div>
                 </a>
               </div>
-            </div>
+            </div> */}
             <div className="col">
               {" "}
               <div
@@ -181,7 +181,7 @@ function Portfolio() {
                 </a>
               </div>{" "}
             </div>
-            <div className="col">
+            {/* <div className="col">
               {" "}
               <div
                 style={{ backgroundImage: "url(/node-readme.jpeg)" }}
@@ -209,7 +209,7 @@ function Portfolio() {
                   </div>
                 </a>
               </div>{" "}
-            </div>
+            </div> */}
             <div className="col">
               {" "}
               <div

@@ -8,11 +8,11 @@ function SideNav() {
       <div className="social-linkss">
         <a className="githubb" href="github.com/haleymay21">
           {" "}
-          <BsGithub size={45} />
+          <BsGithub size={55} />
         </a>
         <a className="linkedinn" href="github.com/haleymay21">
           {" "}
-          <BsLinkedin size={45} />
+          <BsLinkedin size={55} />
         </a>
       </div>
     </section>

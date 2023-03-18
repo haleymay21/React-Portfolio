@@ -7,7 +7,6 @@ import Contact from "../src/components/Contact";
 import Portfolio from "../src/components/Portfolio";
 import Resume from "../src/components/Resume";
 import Footer from "../src/components/Footer";
-import SideNav from "../src/components/SideNav";
 
 import "./App.css";
 
@@ -33,11 +32,10 @@ function App() {
 
   return (
     <>
-      <Header
-        currentTab={currentTab}
-        handleTabChange={handleTabChange}
-      ></Header>
-      <SideNav></SideNav>
+      <Header currentTab={currentTab} handleTabChange={handleTabChange}>
+        {" "}
+      </Header>
+
       <main>{renderTab()}</main>
       <Footer></Footer>
     </>
