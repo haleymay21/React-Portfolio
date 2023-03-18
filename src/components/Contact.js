@@ -1,105 +1,85 @@
-import React, { useState } from "react";
-
-// import helper function that checks if email is valid
-import { validateEmail } from "../utils/helpers";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { BsEnvelopeFill } from "react-icons/bs";
 
 function Contact() {
-  // setting initial values of input fields to an empty string
-  const [email, setEmail] = useState("");
-  const [userName, setUserName] = useState("");
-  const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const form = useRef();
+  const sent = document.getElementById("sent");
 
-  const handleInputChange = (e) => {
-    // Gets the value of the input
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
+  function show() {
+    sent.className = "show";
+  }
 
-    // set state of input type
-    if (inputType === "email") {
-      setEmail(inputValue);
-    } else if (inputType === "userName") {
-      setUserName(inputValue);
-    } else {
-      setMessage(inputValue);
-    }
-  };
-
-  // functionto validate inputs
-  const handleFormSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email) || !userName) {
-      setErrorMessage("Email or Name is invalid");
-      return;
-    }
-
-    if (!setMessage(message)) {
-      setErrorMessage(`Message is required.`);
-      return;
-    }
-
-    // clear out input after submission.
-    setUserName("");
-    setMessage("");
-    setEmail("");
+    emailjs
+      .sendForm(
+        "service_op73icq",
+        "template_12j05sj",
+        form.current,
+        "r35M52slHPGalqSoB"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
-    <section id="reach-out" className="contact">
-      <h2 className="section-title secondary-border">Reach Out!</h2>
-
-      {/* contact form section  */}
-      <div className="contact-form">
-        <h3>Contact Me</h3>
-        <form className="form">
-          {/* Name */}
-          <label className="label" for="contact-name">
-            Your Name:
-          </label>
-          <input
-            value={userName}
-            name="userName"
-            onChange={handleInputChange}
-            type="text"
-            id="contact-name"
-            placeholder="Your Name"
-          />
-          <label className="label" for="contact-email">
-            Your Email:
-          </label>
-          <input
-            value={email}
-            name="email"
-            onChange={handleInputChange}
-            type="email"
-            id="contact-email"
-            placeholder="Your Email"
-          />
-          {/* Message */}
-          <label className="label" for="contact-message">
-            Message:
-          </label>
-          <textarea
-            value={message}
-            name="message"
-            onChange={handleInputChange}
-            type="message"
-            id="contact-message"
-            placeholder="Your Message"
-          />
-          <button type="button" onClick={handleFormSubmit}>
-            Submit
-          </button>
-        </form>
-        {errorMessage && (
-          <div class="errormsg">
-            <p className="error-text">{errorMessage}</p>
+    <>
+      <section id="contact">
+        <div className="parent-title">
+          <div className="title-contact-div">
+            <h1 className="title-contact">Get In Touch</h1>
           </div>
-        )}
-      </div>
-    </section>
+        </div>
+        <form className="form" ref={form} onSubmit={sendEmail}>
+          <label className="label label-name">
+            Your Name
+            <input
+              className="name-input"
+              style={{ height: "35px" }}
+              type="text"
+              name="user_name"
+            />
+          </label>
+          <label className="label label-email">
+            Your Email
+            <input
+              className="email-input"
+              style={{ height: "35px" }}
+              type="email"
+              name="user_email"
+            />
+          </label>
+          <label className="label textArea">Your Message </label>
+          <textarea
+            placeholder=""
+            style={{ marginLeft: "20px", height: "100px", width: "505px" }}
+            name="message"
+          />
+          <input
+            onClick={show}
+            className="button-input"
+            type="submit"
+            value="Send Message"
+          />
+          <p id="sent" className="hide">
+            sent!
+          </p>
+        </form>
+        <div className="email-icon">
+          <a className="email-link" href="mailto:trumbo.haley@gmail.com">
+            <BsEnvelopeFill /> trumbo.haley@gmail.com{" "}
+          </a>
+        </div>
+      </section>
+    </>
   );
 }
 

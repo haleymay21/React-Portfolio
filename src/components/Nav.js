@@ -1,4 +1,5 @@
 import React from "react";
+import { IconHexagonLetterH } from "@tabler/icons-react";
 
 function Nav(props) {
   const { currentTab, handleTabChange } = props;
@@ -6,16 +7,23 @@ function Nav(props) {
   return (
     <section className="navv">
       <ul className="navv">
-        <li className="navList">
+        <li className="my-icon">
+          <IconHexagonLetterH size={40} />
+        </li>
+
+        <li className="navList contact">
           <a
-            href="#aboutMe"
-            onClick={() => handleTabChange("About")}
-            // Check if the currentTab is `About` and set link used
-            className={currentTab === "About" ? "nav-link active" : "nav-link"}
+            href="#contact"
+            onClick={() => handleTabChange("Contact")}
+            // Check if the currentTab is `Contact` and set link used
+            className={
+              currentTab === "Contact" ? "nav-link active" : "nav-link"
+            }
           >
-            About
+            /Contact
           </a>
         </li>
+
         <li className="navList">
           <a
             href="#portfolio"
@@ -25,29 +33,17 @@ function Nav(props) {
               currentTab === "Portfolio" ? "nav-link active" : "nav-link"
             }
           >
-            Portfolio
+            /Portfolio
           </a>
         </li>
         <li className="navList">
           <a
-            href="#contact"
-            onClick={() => handleTabChange("Contact")}
-            // Check if the currentTab is `Contact` and set link used
-            className={
-              currentTab === "Contact" ? "nav-link active" : "nav-link"
-            }
+            href="#aboutMe"
+            onClick={() => handleTabChange("About")}
+            // Check if the currentTab is `About` and set link used
+            className={currentTab === "About" ? "nav-link active" : "nav-link"}
           >
-            Contact
-          </a>
-        </li>
-        <li className="navList">
-          <a
-            href="#resume"
-            onClick={() => handleTabChange("Resume")}
-            // Check if the currentTab is `Resume` and set link used
-            className={currentTab === "Resume" ? "nav-link active" : "nav-link"}
-          >
-            Resume
+            /About
           </a>
         </li>
       </ul>

@@ -3,9 +3,9 @@ import React from "react";
 function Portfolio() {
   return (
     <div>
-      <section id="portfolio" className="jobs">
+      <div id="portfolio" className="jobs">
         <p className="projects">My Projects</p>
-        <div className="container-fluid">
+        <div className="container-fluid project-container">
           <div className="row row-1">
             <div className="col">
               {" "}
@@ -13,7 +13,7 @@ function Portfolio() {
                 style={{ backgroundImage: "url(/help.jpeg)" }}
                 className="item-wrap work"
               >
-                <a href="https://github.com/JacquelineHockin/aloHa">
+                <a href="https://github.com/haleymay21/aloHa">
                   <div>
                     <span className="highlight projectTitle">
                       &nbsp;aloHa&nbsp;
@@ -42,7 +42,7 @@ function Portfolio() {
                 style={{ backgroundImage: "url(/water-2.jpeg)" }}
                 className="item-wrap work"
               >
-                <a href="https://github.com/JacquelineHockin/aloHa">
+                <a href="https://github.com/haleymay21/Tap_Into_Source">
                   <div>
                     <span className="highlight projectTitle">
                       &nbsp;Tap Into Source&nbsp;
@@ -71,7 +71,7 @@ function Portfolio() {
                 style={{ backgroundImage: "url(/doges.webp)" }}
                 className="item-wrap work"
               >
-                <a href="https://github.com/JacquelineHockin/aloHa">
+                <a href="https://github.com/haleymay21/Doges-and-Dad-jokes">
                   <div>
                     <span className="highlight projectTitle">
                       &nbsp;Doges & Dad Jokes&nbsp;
@@ -100,7 +100,7 @@ function Portfolio() {
                 style={{ backgroundImage: "url(/clocks.jpeg)" }}
                 className="item-wrap work"
               >
-                <a href="https://github.com/JacquelineHockin/aloHa">
+                <a href="https://github.com/haleymay21/Challenge5-Calendar">
                   <div>
                     <span className="highlight projectTitle">
                       &nbsp;Dynamic Calander&nbsp;
@@ -128,7 +128,7 @@ function Portfolio() {
                 style={{ backgroundImage: "url(/weather.jpeg)" }}
                 className="item-wrap work"
               >
-                <a href="https://github.com/JacquelineHockin/aloHa">
+                <a href="https://github.com/haleymay21/Challenge6-Weather">
                   <div>
                     <span className="highlight projectTitle">
                       &nbsp;Weather Dashboard&nbsp;
@@ -158,7 +158,7 @@ function Portfolio() {
                 style={{ backgroundImage: "url(/employee.jpeg)" }}
                 className="item-wrap work"
               >
-                <a href="https://github.com/JacquelineHockin/aloHa">
+                <a href="https://github.com/haleymay21/Challenge11-Employee-Tracker">
                   <div>
                     <span className="highlight projectTitle">
                       &nbsp;Employee Tracker&nbsp;
@@ -187,7 +187,7 @@ function Portfolio() {
                 style={{ backgroundImage: "url(/node-readme.jpeg)" }}
                 className="item-wrap work"
               >
-                <a href="https://github.com/JacquelineHockin/aloHa">
+                <a href="https://github.com/haleymay21/Challenge-7-Node-Readme-Generator">
                   <div>
                     <span className="highlight projectTitle">
                       &nbsp;README Generator&nbsp;
@@ -216,7 +216,7 @@ function Portfolio() {
                 style={{ backgroundImage: "url(/note.webp)" }}
                 className="item-wrap work"
               >
-                <a href="https://github.com/JacquelineHockin/aloHa">
+                <a href="https://github.com/haleymay21/Challenge10-Note-Taking-App">
                   <div>
                     <span className="highlight projectTitle">
                       &nbsp;Note Taking App&nbsp;
@@ -241,7 +241,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

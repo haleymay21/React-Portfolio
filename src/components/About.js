@@ -15,14 +15,12 @@ function About() {
             user interfaces, and applications that provide a helpful service. In
             my spare time you can find me somewhere in the mountains or the
             ocean, or curled up playing Zelda at home (patiently waiting for the
-            2023 release!). New in the industry, I'm excited to be a part of a
-            team and turn my skills into a career. I'm also looking forward to
-            finding ways to use my skills in software development to contribute
-            to social causes i feel passionately about. From climate change and
-            conservation, to houselessness, health care availability and civil
-            and womens rights - I'm hoping i can use my skills in coding to give
-            back. Feel free to drop me a line with any questions or opportunites
-            😊
+            2023 release). I'm always looking for ways to
+            use my skills in software development to contribute to social causes
+            i feel passionately about. From climate change and conservation, to
+            houselessness, health care availability and civil and womens rights
+            - I'm hoping i can use my skills in coding to give back. Feel free
+            to drop me a line with any questions or opportunites 😊
           </p>
         </div>
       </div>
