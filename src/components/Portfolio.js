@@ -4,7 +4,7 @@ function Portfolio() {
   return (
     <div>
       <div id="portfolio" className="jobs">
-        <p className="projects">My Projects</p>
+        <p className="projects">Some Things I've Built</p>
         <div className="container-fluid project-container">
           <div className="row row-1">
             <div className="col">

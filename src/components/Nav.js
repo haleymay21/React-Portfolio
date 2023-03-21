@@ -8,9 +8,7 @@ function Nav(props) {
   return (
     <section className="navv">
       <ul className="navv">
-        <li className="my-icon">
-          <IconHexagonLetterH size={40} />
-        </li>
+        <li className="my-icon">&nbsp;&nbsp;HT&nbsp;&nbsp;</li>
         <li className="resume">
           {" "}
           <a href={myResume}>
@@ -26,7 +24,7 @@ function Nav(props) {
               currentTab === "Contact" ? "nav-link active" : "nav-link"
             }
           >
-            /Contact
+            Contact
           </a>
         </li>
 
@@ -39,7 +37,7 @@ function Nav(props) {
               currentTab === "Portfolio" ? "nav-link active" : "nav-link"
             }
           >
-            /Portfolio
+            Portfolio
           </a>
         </li>
         <li className="navList">
@@ -49,7 +47,7 @@ function Nav(props) {
             // Check if the currentTab is `About` and set link used
             className={currentTab === "About" ? "nav-link active" : "nav-link"}
           >
-            /About
+            About
           </a>
         </li>
       </ul>

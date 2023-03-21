@@ -32,9 +32,10 @@ function App() {
 
   return (
     <>
-      <Header currentTab={currentTab} handleTabChange={handleTabChange}>
-        {" "}
-      </Header>
+      <Header
+        currentTab={currentTab}
+        handleTabChange={handleTabChange}
+      ></Header>
 
       <main>{renderTab()}</main>
       <Footer></Footer>

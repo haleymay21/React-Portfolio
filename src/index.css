@@ -9,7 +9,17 @@ body {
   background-color: #e9edc9;
 }
 
+main {
+  max-height: 750px;
+}
+
 /* header styling */
+.flowers {
+  min-height: 500px;
+  min-width: 500px;
+  z-index: 100;
+}
+
 .homeScreen {
   background-color: #ccd5ae;
   min-width: 100%;
@@ -18,9 +28,9 @@ body {
 
 #welcome {
   padding-top: 200px;
-  text-align: center;
-  font-size: 95px;
-  font-family: "opensans-bold", sans-serif;
+  margin-left: 420px;
+  font-size: 50px;
+  font-family: "garamond";
   color: #d4a373;
   height: 15%;
 }
@@ -31,20 +41,36 @@ body {
   font-family: sans-serif;
   color: #b68c62;
   height: 15%;
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
 .highlight {
   background-color: #fefae0;
+  margin-top: 50px;
 }
 
 #softDev {
-  text-align: center;
   font-size: 30px;
   font-family: Garamond;
   color: #d4a373;
   height: 15%;
-  padding-top: 120px;
+  padding-top: 60px;
+  display: block;
+  width: 500px;
+  margin-left: 600px;
+}
+
+.github,
+.linkedin {
+  color: #474d36;
+  min-height: 35px;
+  font-size: 30px;
+  background-color: #fefae0;
+  margin-bottom: 100px;
+}
+
+.github {
+  margin-right: 132px;
 }
 
 .diagonal {
@@ -70,13 +96,14 @@ body {
   z-index: 2;
   width: 100%;
   color: #d4a373;
+  padding: 0;
 }
 
 .resume,
 .resume2 {
   text-decoration: none;
   color: #6e735d !important;
-  font-family: "opensans-bold", sans-serif;
+  font-family: Garamond;
   font-size: 20px;
   float: right;
   list-style-type: none;
@@ -90,6 +117,9 @@ body {
   border-radius: 5px;
   height: 40px;
   margin-top: 6px;
+}
+
+.resume:hover {
   background-color: #ccd5ae40;
 }
 
@@ -113,7 +143,7 @@ a {
 }
 
 .item-list {
-  color: #6e735d;
+  color: #9d7854;
   font-size: 15px;
   font-weight: bold;
 }
@@ -124,31 +154,14 @@ a {
 }
 
 .my-icon {
-  color: #6e735d;
-  margin-right: 20px;
+  color: #9d7854;
+  margin-top: 2px;
+  font-size: 31px;
+  font-family: garamond;
 }
 
 .contact {
   margin-right: 5px;
-}
-************** .social-links {
-  float: right;
-  position: relative;
-  z-index: 2;
-}
-
-.github {
-  margin-right: 5px;
-}
-
-.linkedin {
-  margin-left: 5px;
-  margin-right: 20px;
-}
-
-.github,
-.linkedin {
-  color: #474d36;
 }
 
 /* about me styling */
@@ -210,12 +223,12 @@ a {
 }
 
 .projects {
-  color: #91987b;
+  color: #b68c62;
   text-align: center;
   font-family: sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   height: 10%;
-  margin-top: 10px;
+  margin-top: 28px;
   margin-bottom: 35px;
 }
 
@@ -436,38 +449,37 @@ footer {
   color: #fefae0;
   font-family: "opensans-bold", sans-serif;
   text-align: center;
-  padding-bottom: 3px;
+  padding-top: 6px;
 }
 
 /* side nav styling */
 .githubb,
-.linkedinn,
-.instagramm {
-  display: grid;
-  height: 50px;
-  color: #9d7854;
-  background-color: #fefae0;
-  border-right: solid #91987b;
-  border-width: 2px;
-}
-
 .linkedinn {
-  border-top: solid #9d7854;
-  border-width: 2px;
+  /* display: grid; */
+  height: 40px;
+  color: #6e735d;
+  background-color: #fefae0;
 }
 
-.githubb {
-  border-bottom: solid #91987b;
-  border-width: 2px;
+.githubb:hover,
+.linkedinn:hover {
+  background-color: #fefae000;
+  color: #6e735d;
 }
 
 .social-linkss,
 .side-nav {
   height: 100%;
-  width: 60px;
-  z-index: 2;
-  position: fixed;
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: column-reverse;
+  /* width: 60px; */
+  /* z-index: 2; */
+  /* position: fixed; */
+  /* padding-bottom: 316px; */
+  /* display: flex; */
+  /* flex-direction: column-reverse; */
+}
+
+.highlight,
+.githubb,
+.linkedinn {
+  display: inline;
 }
