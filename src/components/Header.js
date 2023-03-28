@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "./Nav";
-import SideNav from "./SideNav";
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 
@@ -12,12 +11,13 @@ function Header(props) {
       <section>
         <div>
           <Nav currentTab={currentTab} handleTabChange={handleTabChange}></Nav>
-          <SideNav></SideNav>
           <div>
             <h1 id="welcome">Aloha, my name is</h1>
             <h1 id="introduction">Haley Trumbo</h1>
             <p id="softDev">
-              <span class="highlight">&nbsp;Software Developer // </span>
+              <span class="highlight">
+                &nbsp; Full-Stack Software Developer&nbsp;{" "}
+              </span>
               <a className="github" href="https://github.com/haleymay21">
                 <BsGithub />
               </a>
@@ -29,7 +29,6 @@ function Header(props) {
                 <BsLinkedin />{" "}
               </a>
             </p>
-            <Leaf />
           </div>
         </div>
       </section>

@@ -1,6 +1,5 @@
 import React from "react";
-import { IconHexagonLetterH } from "@tabler/icons-react";
-import myResume from "../assets/Resume1.docx.pdf";
+import myResume from "../assets/Resume_sd.pdf";
 
 function Nav(props) {
   const { currentTab, handleTabChange } = props;
