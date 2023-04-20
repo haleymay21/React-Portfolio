@@ -7,7 +7,7 @@ function About() {
 
       <div class=" flex-row wrapper">
         <div class="intro-img">
-          <img id="profPic" src="IMG_2891.png" alt="prof-pic" />
+          <img id="profPic" src="profile.jpg" alt="prof-pic" />
           <p class="me">
             I am a Full Stack Web Developer from the SF bay area, currently
             based out of Honolulu, HI. Experienced in various web development
